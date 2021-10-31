@@ -25,7 +25,7 @@
     height: 100px;
     width:150px;
     background-color: antiquewhite;
-    margin-left: 30%;
+    margin-left: 27%;
     margin-top: 0%;
 }
 .face{
@@ -33,11 +33,16 @@
     width:300px;
     background-color: antiquewhite;
     border-radius: 30%;
-    margin-left: 90px;
-    margin-top: 30%;
+    margin-left: 0px;
+    margin-top: 10%;
+
 }
 #eyes{
 display: flex;
+flex-direction: row;
+}
+.ears{
+    display: flex;
 flex-direction: row;
 }
 .eye1{
@@ -104,6 +109,64 @@ flex-direction: row;
     margin-top: 10px;
     padding-top: 10px;
 }
+.ear1{
+    border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+    width: 50px;
+    height:60px;
+    background-color: antiquewhite;
+    margin-top: 40%;
+    margin-left: 7%;
+    margin-right: 0%;
+    padding: 0%;
+}
+.ear2{
+    width: 50px;
+    height:60px;
+    background-color: antiquewhite;
+    margin-top: 40%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+    border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.eardrum{
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+    background-color:black;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+  
+.hair-top {
+  width: 200px;
+  height: 150px;
+  background: black;
+  position: absolute;
+  left: 54px;
+  top: 10px;
+  border-radius: 100% 0;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+ 
+  z-index:3;
+}
+.hair-left {
+  width: 200px;
+  height: 150px;
+  background: black;
+  position: absolute;
+  left: 234px;
+  top: 10px;
+  border-radius:0 100% ;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+ 
+  z-index:3;
+}
+
+
 
 
 
@@ -113,6 +176,14 @@ flex-direction: row;
 
 
 <div class="circlebase">
+<div class="hair"></div>
+
+
+    <div class="ears">
+        <div class="ear1">
+<div class="eardrum"></div>
+        </div>
+
 <div class="face">
     <div id="eyes">
 <div class="eye1">
@@ -141,13 +212,21 @@ flex-direction: row;
 
 </div>
 
+    
+    <div class="ear2">
+        <div class="eardrum"></div>
+
+    </div>
+
+</div>
+
 <div class="greenshirt">
     <div class="neck"> </div>
 
 </div>
 
-
-
+<div class="hair-top"></div>
+<div class="hair-left"></div>
 </div>
 
 
